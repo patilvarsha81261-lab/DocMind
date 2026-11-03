@@ -1,5 +1,5 @@
 # DocMind: chat with your documents
-
+...........................................................................................................................
 Upload PDFs, DOCX or TXT files and ask questions. Answers cite the file and page they came from, and the app says so when the documents don't contain the answer.
 
 **Pipeline:** parse (PyMuPDF) → sentence-aware chunks → BGE embeddings → Chroma + BM25 → Reciprocal Rank Fusion → cross-encoder re-rank → Claude answers with `[n]` citations.
